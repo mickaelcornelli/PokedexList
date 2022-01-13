@@ -1,0 +1,41 @@
+h1,
+h2 {
+  text-align: center;
+}
+.pokedex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pokemonCard {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 250px;
+  margin: 15px;
+  border: 1px solid black;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  transition: opacity 200ms;
+}
+.pokemonCard:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.5 ease-in-out;
+}
+.pokemonCard img {
+  width: 200px;
+  height: 200px;
+}
+.pokemonCard p {
+  font-weight: bold;
+  font-family: "Trebuchet MS";
+  font-size: 20px;
+  text-transform: uppercase;
+}
